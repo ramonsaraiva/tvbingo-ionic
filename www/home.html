@@ -1,0 +1,16 @@
+<ion-view title="TV Bingo">
+	<ion-content>
+		<div class="list">
+			<label class="item item-input item-stacked-label">
+				<span class="input-label">To join a bingo, please enter its code</span>
+				<input ng-model="bingo.code" type="text" placeholder="BINGO CODE">
+			</label>
+		</div>
+		<button ng-click="qr()" class="button button-block button-calm">
+			Read QR
+		</button>
+		<button ng-click="join()" class="button button-block button-positive">
+			Submit
+		</button>
+	</ion-content>
+</ion-view>

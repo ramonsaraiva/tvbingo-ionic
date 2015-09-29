@@ -1,0 +1,11 @@
+<ion-view title="TV Bingo Card">
+	<ion-content>
+		<div ng-repeat="line in card" class="row row-center">
+			<div ng-repeat="column in lines" class="col col-12">
+				<div class="col text-center" style="font-size: 2em; border: 1px solid gray; height: 80px;">
+						{{ card_value(line, $index) }}
+				</div>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>
